@@ -2,9 +2,20 @@
 body {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-image: url(../img/hero-bg.png), -webkit-gradient(linear, left top, left bottom, from(rgba(165, 85, 85, 0.1)), to(rgba(0, 0, 0, 0.1)));
+  background-image: url(../img/hero-bg.png), linear-gradient(rgba(165, 85, 85, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.all {
+  margin-top: -7rem;
+  width: 100vw;
+  height: 6rem;
+  position: fixed;
+  z-index: 1;
   background-image: url(../img/hero-bg.png), linear-gradient(rgba(165, 85, 85, 0.1), rgba(0, 0, 0, 0.1));
 }
 
@@ -12,56 +23,41 @@ body {
 .navbar {
   font-family: "Roboto";
   height: 5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 6rem;
 }
-
 .navbar .navigation {
   padding-top: 3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .navbar .navigation a {
   color: #234;
   font-size: 20px;
   font-family: "Roboto";
   margin-right: 3rem;
   text-decoration: none;
-  -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
 }
-
 .navbar .navigation a:hover {
   color: #e42222;
 }
-
 .navbar .image_classic {
   margin-left: 8rem;
   margin-top: 1.5rem;
 }
-
 .navbar .image_classic:hover {
   cursor: pointer;
 }
-
 .navbar .navbar {
   padding-top: 2rem;
   color: #234;
   font-size: 20px;
   font-family: "Roboto";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .navbar .navbar li:hover {
   cursor: pointer;
 }
-
 .navbar .navbar img {
   width: 40px;
   height: 40px;
@@ -69,14 +65,11 @@ body {
   margin-right: 1rem;
   margin-left: 3rem;
 }
-
 .navbar .navbar p {
   font-family: "Roboto";
   font-weight: 800;
-  -webkit-transition: 0.2s ease all;
   transition: 0.2s ease all;
 }
-
 .navbar .navbar p:hover {
   cursor: pointer;
   color: #e42222;
@@ -84,8 +77,6 @@ body {
 
 /*Start section second style*/
 .container1 {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 100vw;
   height: 40rem;
@@ -99,15 +90,12 @@ body {
   font-family: "Roboto";
   font-size: 25px;
 }
-
 .header1 h1 {
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
 
 .paragraf {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 40rem;
   height: 5rem;
@@ -116,7 +104,6 @@ body {
   font-family: "Roboto";
   font-size: 20px;
 }
-
 .paragraf p {
   margin-left: -2rem;
   word-spacing: 4px;
@@ -134,15 +121,12 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .container2 .pizza {
   position: absolute;
   margin: -30rem 18rem;
 }
 
 .plus {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   width: 40px;
@@ -151,24 +135,16 @@ body {
   background-color: white;
   margin-left: 49rem;
   margin-top: -17rem;
-  -webkit-box-shadow: 2px 2px 10px #706969;
   box-shadow: 2px 2px 10px #706969;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   font-size: 30px;
-  -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
 }
-
 .plus:hover {
   cursor: pointer;
   background-color: #e6d4d4;
 }
-
 .plus img {
   width: 15px;
   height: 15px;
@@ -190,11 +166,9 @@ body {
   line-height: 1.5rem;
   font-size: 20px;
 }
-
 .line_word .when {
   margin-left: 28px;
 }
-
 .line_word span {
   color: red;
   font-weight: 600;
@@ -208,6 +182,7 @@ body {
   margin-top: -49rem;
   margin-left: 2rem;
   opacity: 0;
+  z-index: 100;
 }
 
 .section2 {
@@ -216,7 +191,6 @@ body {
   height: 36rem;
   background-color: white;
 }
-
 .section2 .header_section {
   font-family: "Roboto";
   font-weight: 700;
@@ -228,21 +202,16 @@ body {
   margin-left: 27rem;
   margin-top: 8rem;
 }
-
 .section2 .header_section h1 {
   font-weight: 600;
   letter-spacing: 0.3rem;
 }
-
 .section2 .buttom_class {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   margin-top: 18rem;
   margin-left: 15rem;
 }
-
 .section2 .buttom_class button {
   width: 9rem;
   height: 3.5rem;
@@ -252,12 +221,9 @@ body {
   font-size: 20px;
   font-weight: 500;
   border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  -webkit-transition: 0.4s ease all;
   transition: 0.4s ease all;
 }
-
 .section2 .buttom_class button:hover {
   cursor: pointer;
   background-color: #3434e4;
@@ -266,17 +232,13 @@ body {
 
 /*End Section2 style*/
 @media only screen and (max-width: 800px) {
-  .navbar {
+  .all {
     visibility: hidden;
   }
 
   .section2 {
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     background-color: transparent;
   }
@@ -287,16 +249,12 @@ body {
     text-align: center;
     position: relative;
   }
-
   .header_section h1 {
     font-size: 40px;
   }
 
   .buttom_class {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 11rem;
     height: 18rem;
@@ -308,6 +266,5 @@ body {
     opacity: 1;
   }
 }
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */

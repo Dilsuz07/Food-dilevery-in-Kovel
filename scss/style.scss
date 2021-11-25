@@ -6,7 +6,18 @@ body{
     box-sizing: border-box;
     background-image: url(../img/hero-bg.png) ,linear-gradient(rgba(165, 85, 85, 0.1),rgba(0,0,0,0.1));
 }
-
+html{
+    scroll-behavior: smooth;
+   
+}
+.all{
+    margin-top: -7rem;
+    width: 100vw;
+    height: 6rem;
+    position: fixed;
+    z-index: 1;
+    background-image: url(../img/hero-bg.png) ,linear-gradient(rgba(165, 85, 85, 0.1),rgba(0,0,0,0.1));
+}
 /* Start Navbar Section style */
 
 .navbar{
@@ -176,6 +187,7 @@ body{
     margin-top: -49rem;
     margin-left: 2rem;
     opacity: 0;
+    z-index: 100;
 
 }
 .section2{
@@ -232,7 +244,7 @@ body{
 /*End Section2 style*/
 
 @media only screen and (max-width:800px){
-     .navbar{
+     .all{
          visibility: hidden;
          
      }
@@ -259,8 +271,8 @@ body{
          flex-wrap: wrap;
          width:11rem;
          height: 18rem;
-        text-align: center;
-        position: relative;
+         text-align: center;
+         position: relative;
     
      }
      .bar{
